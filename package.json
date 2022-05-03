@@ -1,0 +1,26 @@
+{
+  "name": "ts-hero",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "main": "src/main.ts",
+  "author": "Omar del Real Ouldam",
+  "license": "ISC",
+  "scripts": {
+    "start": "nodemon -q --watch 'src/**/*.ts' --exec 'ts-node' src/main.ts",
+    "compile": "tsc",
+    "compile:watch": "tsc --watch",
+    "lint": "eslint src/ --ext .ts"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.22.0",
+    "@typescript-eslint/parser": "^5.22.0",
+    "eslint": "^8.14.0",
+    "prettier": "^2.6.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.4"
+  }
+}
